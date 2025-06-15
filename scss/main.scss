@@ -1,0 +1,12 @@
+//Importation de tout les fichiers SCSS
+
+//Importatio des variabes globales
+@import 'variables';
+
+//Importation des mixins
+@import 'mixins';
+
+//Importation des repertoires des partials
+@import "partials/02-bases/base-dir";
+
+@import "partials/03-modules/modules-dir";

@@ -1,0 +1,51 @@
+//Definition generale du header
+
+header{
+    nav {
+        .logo img {
+            /*NavBAr, logo et nom du site*/
+            height: 80px;
+            padding-right: 0.5rem;
+        }
+
+        .navLink .active {
+            /*NavBAr lien actif*/
+            color: $jaune-vert;
+            font-weight: 600;
+        }
+
+        .navMenuBurger{
+            /*Cacher le menu burger*/
+            display: none;
+        }
+
+        @media screen and (max-width: $breakpoint1) {
+            
+            .navUser, .navLink {
+                /*Cacher les liens*/
+                display: none;
+            }
+            
+            .navMenuBurger {
+                /*Menu burger*/
+                display: flex;
+                width: 35%;
+                color: $jaune-vert;
+                justify-content: end;
+                align-items: center;
+                
+                i {
+                    /*Icone du menu burger*/
+                    font-size: 1.6rem;
+                }
+            }
+
+        }
+
+        @media screen and (max-width: $breakpoint2){
+                .logo h1{
+                    display: none;
+                }
+        }
+    }
+}

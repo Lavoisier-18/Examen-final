@@ -1,0 +1,160 @@
+.main-boutique{
+    display: flex;
+        .filters {
+        width: 390px;
+        padding: 15px;
+        margin: 0;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        top: 80px;
+        bottom: 20px;
+        overflow-y: auto;
+        height: calc(100vh - 100px);
+
+        h3, h4 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                margin: 5px 0;
+
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: #007bff;
+
+                    &:hover {
+                        color: #0056b3;
+                    }
+                }
+            }
+        }
+    }
+    .shop-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+
+    .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 5%;
+        gap: 20px;
+        width: calc(95%);
+
+        .product-card {
+            width: 250px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            .rating {
+                font-size: 1.2em;
+                color: #FFD43B; // Couleur des étoiles
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                max-height: 250px;
+                border-radius: 8px; // Ajout d’un arrondi sur l’image
+            }
+
+            h3 {
+                font-size: 1.4em;
+                color: $gris-fonce; // Couleur du prix
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            button{
+                background-color: $jaune-vert;
+                color: #000;
+                border: none;
+                padding: 10px 15px;
+                font-size: 1em;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+                margin-top: 10px;
+                display: block;
+                width: 100%;
+                text-align: center;
+
+                &:hover {
+                    background-color: $gris-fonce;
+                    color: $color-white;
+                    transform: scale(1.05);
+                }
+
+                &:active {
+                    background-color: #C5172F;
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+}
+
+/* Breakpoint 930px */
+@media screen and (max-width: $breakpoint1) {
+
+    flex-direction: column;
+    .filters {
+        position: relative;
+        width:96.4%;
+        height: fit-content;
+        top: 0;
+        justify-content: center;
+        h2{
+            display: none;
+        }
+        ul{
+            padding-left: 15px;
+            padding-right: 15px;
+            li{
+                display: inline-block;    
+            }
+        }
+    }
+
+    .product-grid {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Breakpoint 435px */
+@media screen and (max-width: 435px) {
+    .product-card {
+        width: 100%;
+    }
+
+    .pagination {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+}

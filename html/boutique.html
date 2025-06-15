@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Lien Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Lien Montserrat-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap">
+
+    <!--Lien CSS-->
+    <link rel="stylesheet" href="../scss/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Lavoisier Cabrilain</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <!--NavBar-->
+        <nav>
+            <!--Logo et nom de la marque-->
+            <div class="logo">
+                <a href="../index.html"><img src="../img/Lavoisier_Cabrilain.jpg" alt="Logo Marque"></a>
+                <h1>Lavoisier Cabrilain</h1>
+            </div>
+            <!--Liens de navigation-->
+            <div class="navLink">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li class="active"><a href="boutique.html">Boutique</a></li>
+                    <li><a href="service-client.html">Service Client</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--Parti propre a un utilisateur (favoris, profil, et panier)-->
+            <div class="navUser">
+                <ul>
+                    <li><a href="#">Favoris</a></li>
+                    <li><a href="#">Panier</a></li>
+                    <li><a href="#">Mon compte</a></li>
+                </ul>
+            </div>
+            <!--Menu burger pour responsive-->
+            <div class="navMenuBurger">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="main-boutique">
+        <aside class="filters">
+            <h2>Filtres</h2>
+            <h3>Catégories</h3>
+            <ul>
+                <li><input type="checkbox"> Ordinateurs</li>
+                <li><input type="checkbox"> Téléphones</li>
+                <li><input type="checkbox"> Caméras</li>
+                <li><input type="checkbox"> Périphériques</li>
+                <li><input type="checkbox"> Logiciels</li>
+                <li><input type="checkbox"> Accessoires</li>
+                <li><input type="checkbox"> Réseaux & Stockages</li>
+                <li><input type="checkbox"> Gaming</li>
+            </ul>
+            <h3>Marques</h3>
+            <ul>
+                <li><input type="checkbox"> MSI</li>
+                <li><input type="checkbox"> Apple</li>
+                <li><input type="checkbox"> Samsung</li>
+                <li><input type="checkbox"> Dell</li>
+                <li><input type="checkbox"> HP</li>
+                <li><input type="checkbox"> Lenovo</li>
+                <li><input type="checkbox"> Asus</li>
+            </ul>
+        </aside>
+        <!--Main-->
+        <section class="shop-container">
+            <h2>Notre Boutique</h2>
+
+            <section class="product-grid">
+                <div class="product-card">
+                    <img src="../img/PC-Gamer-X1000.jpg" alt="PC Gamer">
+                    <h4>PC Gamer X1000</h4>
+                    <p>Performances extrêmes pour les gamers passionnés.</p>
+                    <div class="rating">
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star-half-stroke"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 0.5;"></i>
+                    </div>
+                    <h3>1299€</h3>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/Laptop-Pro-15.jpg" alt="Laptop">
+                    <h4>Laptop Pro 15"</h4>
+                    <div class="rating">
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star-half-stroke"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 0.5;"></i>
+                    </div>
+                    <p>Idéal pour le travail et les déplacements.</p>
+                    <h3>999€</h3>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/Souris-Gaming-RGB.jpg" alt="Souris Gaming">
+                    <h4>Souris Gaming RGB</h4>
+                    <p>Précision et confort pour vos sessions de jeu.</p>
+                    <div class="rating">
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star-half-stroke"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 0.5;"></i>
+                    </div>
+                    <h3>49€</h3>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/Clavier-Mécanique.png" alt="Clavier">
+                    <h4>Clavier Mécanique</h4>
+                    <p>Touches ultra-réactives pour une frappe optimisée.</p>
+                    <div class="rating">
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star-half-stroke"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 0.5;"></i>
+                    </div>
+                    <h3>79€</h3>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/Casque-Gamer-7-1.jpg" alt="Casque Audio">
+                    <h4>Casque Gamer 7.1</h4>
+                    <p>Son immersif pour une expérience de jeu unique.</p>
+                    <div class="rating">
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star-half-stroke"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 0.5;"></i>
+                    </div>
+                    <h3>129€</h3>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/Écran-4K-Ultra-HD.jpg" alt="Écran">
+                    <h4>Écran 4K Ultra HD</h4>
+                    <p>Qualité d’image exceptionnelle pour le gaming et la bureautique.</p>
+                    <div class="rating">
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star-half-stroke"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 0.5;"></i>
+                    </div>
+                    <h3>499€</h3>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/SSD-1To-NVMe.jpg" alt="SSD">
+                    <h4>SSD 1To NVMe</h4>
+                    <p>Vitesse fulgurante pour le stockage et les performances.</p>
+                    <div class="rating">
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star-half-stroke"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 0.5;"></i>
+                    </div>
+                    <h3>129€</h3>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/Routeur-Wi-Fi-6.jpg" alt="Routeur">
+                    <h4>Routeur Wi-Fi 6</h4>
+                    <p>Connexion ultra-rapide et stable.</p>
+                    <div class="rating">
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star-half-stroke"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 0.5;"></i>
+                    </div>
+                    <h3>199€</h3>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="../img/enceinte-jbl.jpg" alt="Enceinte lumineux">
+                    <h4>Enceinte Lumineuse</h4>
+                    <p>Qualité sonore premium, pour une expérience musicale sans limites..</p>
+                    <div class="rating">
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star-half-stroke"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 0.5;"></i>
+                    </div>
+                    <h3>199€</h3>
+                    <button>Ajouter au panier</button>
+                </div>
+                 <div class="product-card">
+                    <img src="../img/camera-canon-EOS-R8.jpg" alt="camera-EOS-R8">
+                    <h4>Caméra Canon EOS R8</h4>
+                    <p>Pour des photos et vidéos a couper le souffle.</p>
+                    <div class="rating">
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star-half-stroke"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 0.5;"></i>
+                    </div>
+                    <h3>1.676,99€</h3>
+                    <button>Ajouter au panier</button>
+                </div>
+                 <div class="product-card">
+                    <img src="../img/galaxy-s9.jpg" alt="Samsung GAlaxy S9">
+                    <h4>Samsung Galaxy S9</h4>
+                    <p>Réunis qualité-prix pour votre plus grand bonheur.</p>
+                    <div class="rating">
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star-half-stroke"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 0.5;"></i>
+                    </div>
+                    <h3>599€</h3>
+                    <button>Ajouter au panier</button>
+                </div>
+                 <div class="product-card">
+                    <img src="../img/laptop-msi.png" alt="MSI KATANA">
+                    <h4>MSI KATANA B13VGK 15.6"</h4>
+                    <p>Performance de jeu et finesse avec un écran 144 Hz</p>
+                    <div class="rating">
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 1;"></i>
+                        <i class="fa-sharp-duotone fa-solid fa-star-half-stroke"
+                            style="--fa-primary-color: #FFD43B; --fa-secondary-color: #FFD43B; --fa-secondary-opacity: 0.5;"></i>
+                    </div>
+                    <h3>1.899,00€</h3>
+                    <button>Ajouter au panier</button>
+                </div>
+            </section>
+
+            <div class="pagination">
+                <a href="#" class="prev">Précédent</a>
+                <span class="page-number">1</span>
+                <a href="#" class="next">Suivant</a>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footer-top">
+            <h2>LAVOISIER CABRILAIN</h2>
+            <hr>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="legal">
+                <h3>Mentions Légales</h3>
+                <p>Lavoisier Cabrilain - Tous droits réservés</p>
+                <p>Adresse : 123 Rue Imaginaire, Bruxelles</p>
+                <p>Contact : contact@lavoisiercabrilain.com</p>
+                <p><a href="#">Conditions d'utilisation</a> | <a href="#">Politique de confidentialité</a></p>
+            </div>
+
+            <div class="navigation">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="service-client.html">Service Client</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="follow-us">
+                <h3>Nous Suivre</h3>
+                <ul class="social-links">
+                    <li><i class="fa-brands fa-x-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram" style="color: #ff28be;"></i></li>
+                    <li><i class="fa-brands fa-facebook" style="color: #0992fb;"></i></li>
+                    <li><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></li>
+                    <li><i class="fa-brands fa-twitch"></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

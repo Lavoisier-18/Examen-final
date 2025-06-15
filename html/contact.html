@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Lien Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Lien Montserrat-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap">
+
+    <!--Lien CSS-->
+    <link rel="stylesheet" href="../scss/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Lavoisier Cabrilain</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <!--NavBar-->
+        <nav>
+            <!--Logo et nom de la marque-->
+            <div class="logo">
+                <a href="../index.html"><img src="../img/Lavoisier_Cabrilain.jpg" alt="Logo Marque"></a>
+                <h1>Lavoisier Cabrilain</h1>
+            </div>
+            <!--Liens de navigation-->
+            <div class="navLink">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="service-client.html">Service Client</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--Parti propre a un utilisateur (favoris, profil, et panier)-->
+            <div class="navUser">
+                <ul>
+                    <li><a href="#">Favoris</a></li>
+                    <li><a href="#">Panier</a></li>
+                    <li><a href="#">Mon compte</a></li>
+                </ul>
+            </div>
+            <!--Menu burger pour responsive-->
+            <div class="navMenuBurger">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--Main-->
+    <main>
+        <section class="contact-container">
+            <h2>Contactez-nous</h2>
+            <form class="contact-form">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service">Service souhaité :</label>
+                <select id="service" name="service">
+                    <option value="">Selectionnez un service</option>
+                    <option value="achat">Achat</option>
+                    <option value="vente">Vente</option>
+                    <option value="livraison">Livraison</option>
+                    <option value="autre">Autre</option>
+                </select>
+
+                <label for="commentaire">Commentaire :</label>
+                <textarea id="commentaire" name="commentaire" rows="4"></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-top">
+            <h2>LAVOISIER CABRILAIN</h2>
+            <hr>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="legal">
+                <h3>Mentions Légales</h3>
+                <p>Lavoisier Cabrilain - Tous droits réservés</p>
+                <p>Adresse : 123 Rue Imaginaire, Bruxelles</p>
+                <p>Contact : contact@lavoisiercabrilain.com</p>
+                <p><a href="#">Conditions d'utilisation</a> | <a href="#">Politique de confidentialité</a></p>
+            </div>
+
+            <div class="navigation">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="service-client.html">Service Client</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="follow-us">
+                <h3>Nous Suivre</h3>
+                <ul class="social-links">
+                    <li><i class="fa-brands fa-x-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram" style="color: #ff28be;"></i></li>
+                    <li><i class="fa-brands fa-facebook" style="color: #0992fb;"></i></li>
+                    <li><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></li>
+                    <li><i class="fa-brands fa-twitch"></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

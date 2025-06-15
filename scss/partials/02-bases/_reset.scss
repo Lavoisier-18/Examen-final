@@ -1,0 +1,29 @@
+/*Definition du visuel lors du scroll*/
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*Reset de la page */
+* {
+    margin: 0;
+    padding: 0;
+
+    body {
+        width: 100vw;
+        height: 100vh;
+
+
+        main{
+            padding: 3%;
+            background-color: $bg-gris-clair;
+
+            h2{
+                font-size: 1.8rem;
+                font-weight: 700;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+        }
+    }
+}
