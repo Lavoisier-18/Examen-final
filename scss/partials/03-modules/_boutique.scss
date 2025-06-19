@@ -65,19 +65,19 @@
             text-align: center;
             .rating {
                 font-size: 1.2em;
-                color: #FFD43B; // Couleur des étoiles
+                color: #FFD43B; 
             }
 
             img {
                 width: 100%;
                 height: auto;
                 max-height: 250px;
-                border-radius: 8px; // Ajout d’un arrondi sur l’image
+                border-radius: 8px; 
             }
 
             h3 {
                 font-size: 1.4em;
-                color: $gris-fonce; // Couleur du prix
+                color: $gris-fonce; 
                 font-weight: bold;
                 margin-top: 10px;
             }

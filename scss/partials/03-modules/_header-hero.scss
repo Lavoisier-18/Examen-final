@@ -1,12 +1,12 @@
 header{
     .section-hero{
-        //Styles de toute la section hero
+        /*Styles de toute la section hero*/
         padding-top: 4.5rem;
         padding-right: 2%;
         padding-left: 2%;
         display: flex;
         justify-content: space-between;
-        //Section de presentation de heros
+        /*Section de presentation de heros*/
         .hero-slogan{
             padding: 3%;
             width: 33.33%;
@@ -35,7 +35,7 @@ header{
                 }
             }
         }
-        //Section image de heros
+        /*Section image de heros*/
         .hero-produit{
             background: {
                 image: url(../img/hero.png);
@@ -45,7 +45,7 @@ header{
             }
             width: 50%;
         }
-        //Responsive section hero
+        /*Responsive section hero*/
     @media screen and (max-width: $breakpoint1){
         padding-top: 2rem;
         padding-left: 3%;

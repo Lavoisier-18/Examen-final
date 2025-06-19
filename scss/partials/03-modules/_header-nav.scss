@@ -1,7 +1,3 @@
-
-// ===========================
-
-// STYLE GLOBAL HEADER
 header {
   nav {
     display: flex;
@@ -21,7 +17,6 @@ header {
       h1 {
         font-size: 1.8rem;
         margin: 0;
-        font-family: ;
       }
     }
 
@@ -60,7 +55,6 @@ header {
       }
     }
 
-    // Responsive
     @media screen and (max-width: $breakpoint1) {
       align-items: flex-start;
       max-height: 550px;
@@ -116,7 +110,7 @@ header {
   }
 }
 
-// Animation dropdown
+/* Animation dropdown*/
 @keyframes dropdown {
   from {
     opacity: 0;

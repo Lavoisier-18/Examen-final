@@ -1,5 +1,5 @@
 .last-products {
-    // Gestion de la section nouveautes
+    /* Gestion de la section nouveautes */
     .products-container {
         background-color: $color-white;
         display: flex;
@@ -8,7 +8,7 @@
         padding-top: 15px;
         padding-bottom: 15px;
         gap: 20px; 
-        //Gestion de chaque produit
+        /*Gestion de chaque produit*/
         .product {
             padding: 20px;
             width: 22%; 
@@ -25,12 +25,12 @@
             &:hover {
                 transform: scale(1.05);
             }
-
+            /* Ajout d’un arrondi sur l’image */
             img {
                 width: 100%;
                 height: auto;
                 max-height: 250px;
-                border-radius: 8px; // Ajout d’un arrondi sur l’image
+                border-radius: 8px; 
             }
 
             h4 {
@@ -44,15 +44,15 @@
                 color: #555;
                 margin-bottom: 10px;
             }
-
+             /* Style pour l des étoiles*/
             .rating {
                 font-size: 1.2em;
-                color: #FFD43B; // Couleur des étoiles
+                color: #FFD43B;
             }
-
+            /*Style pour les prix*/
             h3 {
                 font-size: 1.4em;
-                color: $gris-fonce; // Couleur du prix
+                color: $gris-fonce; 
                 font-weight: bold;
                 margin-top: 10px;
             }

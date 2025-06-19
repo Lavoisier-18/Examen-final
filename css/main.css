@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Definition du visuel lors du scroll*/
 html {
   scroll-behavior: smooth;
@@ -213,6 +214,7 @@ header nav .navMenuBurger i {
   }
 }
 
+/* Animation dropdown*/
 @keyframes dropdown {
   from {
     opacity: 0;
@@ -224,11 +226,15 @@ header nav .navMenuBurger i {
   }
 }
 header .section-hero {
+  /*Styles de toute la section hero*/
   padding-top: 4.5rem;
   padding-right: 2%;
   padding-left: 2%;
   display: flex;
   justify-content: space-between;
+  /*Section de presentation de heros*/
+  /*Section image de heros*/
+  /*Responsive section hero*/
 }
 header .section-hero .hero-slogan {
   padding: 3%;
@@ -283,6 +289,58 @@ header .section-hero .hero-produit {
   }
 }
 
+.footer-top {
+  color: #FFF;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom .follow-us justify-content:unset ul li {
+  display: inline-block;
+}
+.footer-bottom .follow-us p {
+  color: #FFF;
+}
+.footer-bottom .navigation a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 30px;
+}
+.footer-bottom .logo {
+  width: 28%;
+  background-image: url(../img/Lavoisier_Cabrilain.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 60%;
+  background-opacity: 0.3;
+}
+@media screen and (max-width: 930px) {
+  .footer-bottom {
+    flex-direction: column-reverse;
+  }
+  .footer-bottom .follow-us ul li {
+    display: inline-block;
+    justify-content: center;
+    padding-right: 2%;
+  }
+  .footer-bottom .follow-us ul li i {
+    font-size: 60px;
+  }
+  .footer-bottom .logo {
+    height: 150px;
+    background-size: contain;
+    margin-left: 35%;
+  }
+}
+
+.last-products {
+  /* Gestion de la section nouveautes */
+}
 .last-products .products-container {
   background-color: #FFF;
   display: flex;
@@ -291,6 +349,7 @@ header .section-hero .hero-produit {
   padding-top: 15px;
   padding-bottom: 15px;
   gap: 20px;
+  /*Gestion de chaque produit*/
 }
 .last-products .products-container .product {
   padding: 20px;
@@ -304,6 +363,9 @@ header .section-hero .hero-produit {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  /* Ajout d’un arrondi sur l’image */
+  /* Style pour l des étoiles*/
+  /*Style pour les prix*/
 }
 .last-products .products-container .product:hover {
   transform: scale(1.05);
@@ -820,4 +882,4 @@ header .section-hero .hero-produit {
 .contact-container .contact-form button:hover {
   background-color: #6E6E6E;
   color: #FFF;
-}/*# sourceMappingURL=main.css.map */
+}
