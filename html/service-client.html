@@ -17,7 +17,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <title>Lavoisier Cabrilain</title>
+    <title>Service client - Lavoisier Cabrilain</title>
+    <link rel="icon" type="image/x-icon" href="../img/Lavoisier_Cabrilain.jpg">
 </head>
 
 <body>
@@ -176,6 +177,40 @@
         </div>
     </footer>
 
+
+    <script>
+    const burger = document.querySelector('.navMenuBurger');
+    const navLinks = document.querySelector('.navLink');
+    const navUser = document.querySelector('.navUser');
+
+    const closeMenu = () => {
+        navLinks.classList.remove('visible');
+        navUser.classList.remove('visible');
+        document.removeEventListener('click', outsideClickListener);
+    };
+
+    const outsideClickListener = (event) => {
+        const isClickInside = burger.contains(event.target) || navLinks.contains(event.target) || navUser.contains(event.target);
+        if (!isClickInside) {
+            closeMenu();
+        }
+    };
+
+    burger.addEventListener('click', (e) => {
+        e.stopPropagation(); // évite de déclencher l'événement du document
+        const isVisible = navLinks.classList.contains('visible');
+
+        if (!isVisible) {
+            navLinks.classList.add('visible');
+            navUser.classList.add('visible');
+            setTimeout(() => {
+                document.addEventListener('click', outsideClickListener);
+            }, 10);
+        } else {
+            closeMenu();
+        }
+    });
+</script>
 </body>
 
 </html>

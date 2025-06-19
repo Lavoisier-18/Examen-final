@@ -1,51 +1,129 @@
-//Definition generale du header
 
-header{
-    nav {
-        .logo img {
-            /*NavBAr, logo et nom du site*/
-            height: 80px;
-            padding-right: 0.5rem;
-        }
+// ===========================
 
-        .navLink .active {
-            /*NavBAr lien actif*/
-            color: $jaune-vert;
-            font-weight: 600;
-        }
+// STYLE GLOBAL HEADER
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 
-        .navMenuBurger{
-            /*Cacher le menu burger*/
-            display: none;
-        }
+    .logo {
+      display: flex;
+      align-items: center;
 
-        @media screen and (max-width: $breakpoint1) {
-            
-            .navUser, .navLink {
-                /*Cacher les liens*/
-                display: none;
-            }
-            
-            .navMenuBurger {
-                /*Menu burger*/
-                display: flex;
-                width: 35%;
-                color: $jaune-vert;
-                justify-content: end;
-                align-items: center;
-                
-                i {
-                    /*Icone du menu burger*/
-                    font-size: 1.6rem;
-                }
-            }
+      img {
+        height: 80px;
+        padding-right: 0.5rem;
+      }
 
-        }
-
-        @media screen and (max-width: $breakpoint2){
-                .logo h1{
-                    display: none;
-                }
-        }
+      h1 {
+        font-size: 1.8rem;
+        margin: 0;
+        font-family: ;
+      }
     }
+
+    .navLink,
+    .navUser {
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 0.8rem;
+
+        li {
+          a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .active a {
+        color: $jaune-vert;
+        font-weight: 600;
+      }
+    }
+
+    .navMenuBurger {
+      display: none;
+      cursor: pointer;
+
+      i {
+        font-size: 1.6rem;
+        color: $jaune-vert;
+      }
+    }
+
+    // Responsive
+    @media screen and (max-width: $breakpoint1) {
+      align-items: flex-start;
+      max-height: 550px;
+      .navMenuBurger {
+        display: flex;
+        width: 20%;
+        justify-content: flex-end;
+        padding-top: 1.8rem;
+        padding-right: 1rem;
+      }
+      .logo{
+        width: 75%;
+      }
+
+      .navLink,
+      .navUser {
+        display: none;
+
+        &.visible {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          background-color: $gris-fonce;
+          animation: dropdown 0.3s ease forwards;
+
+          ul {
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+
+            li {
+              width: 100%;
+              padding: 0.8rem 0;
+              text-align: center;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+              a {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: $breakpoint2) {
+      .logo h1 {
+        display: none;
+      }
+    }
+  }
+}
+
+// Animation dropdown
+@keyframes dropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
